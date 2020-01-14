@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body onload="carregacanvas()">
+    <h1>Flyer</h1>
+
+    <form class="" action="index.html" method="post">
+      <div class="itens">
+        Nome acessora:
+        <input id="acessora" type="text" name="acessora" value="">
+      </div>
+      <div class="itens">
+        Nome cliente:
+        <input id="cliente" type="text" name="cliente" value="">
+      </div>
+      <div class="itens">
+        Data:
+        <input id="data" type="date" name="data" value="">
+      </div>
+      <div class="itens">
+        Horário:
+        <input id="horario" type="time" name="horario" value="">
+      </div>
+
+    </form>
+
+    <p><button onclick="carregacanvas()">Gerar</button></p>
+
+
+    <canvas id="canvas" width="826" height="1280"></canvas>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
