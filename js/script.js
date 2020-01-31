@@ -1,27 +1,28 @@
 var img = new Image();
-img.src = 'img/flyer.jpg';
+img.src = 'img/flyerv2.jpg';
 
 function carregacanvas(){
   var c = document.getElementById("canvas");
   var ctx = c.getContext("2d");
   ctx.drawImage(img, 0, 0);
-  ctx.font = "17px Arial";
+  ctx.font = "Bold 19px TT Commons";
+  ctx.fillStyle = "#011d4d";
 
   var acessora = document.getElementById("acessora").value;
-  ctx.fillText(acessora,528,314);
+  ctx.fillText(acessora,175,376);
 
 
-  ctx.font = "20px Arial";
   var cliente = document.getElementById("cliente").value;
-  ctx.fillText(cliente,630,290);
+  ctx.font = "Bold 25px TT Commons";
+  ctx.fillText(cliente,57,283);
+
 
   var data = document.getElementById("data").value;
-
-  ctx.fillText(formatardata(data),255,524);
-
+  ctx.font = "35px TT Commons";
+  ctx.fillText(formatardata(data),140,521);
 
   var horario = document.getElementById("horario").value;
-  ctx.fillText(horario,532,524);
+  ctx.fillText(horario,490,521);
 
 }
 
